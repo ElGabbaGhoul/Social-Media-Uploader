@@ -13,3 +13,4 @@ Project NatureBot Created
     - began UI layout planning. Mind mapping, flowcharting, etc. in Figma, Excalidraw and similar softwares.    
     - Except not really lol. 
     - Pseudocoding out basic functionality of each module and main.py. 
+    - Testing ideas with basic code from CGPT
