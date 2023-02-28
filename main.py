@@ -1,1 +1,0 @@
-# this file will be responsible for handling the logic of asking for a photo, a message, and some optional hashtags.

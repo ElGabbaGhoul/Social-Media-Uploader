@@ -1,0 +1,1 @@
+# this module will be responsible for logging in to twitter, sending out tweets with a photo, some words and a handful of hashtags (optional).

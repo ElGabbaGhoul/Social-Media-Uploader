@@ -1,1 +1,0 @@
-# this module will be responsible for sending out posts to facebook with a photo, some words and a handful of hashtags.

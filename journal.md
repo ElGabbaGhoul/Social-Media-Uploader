@@ -11,3 +11,5 @@ Project NatureBot Created
     - At this time the desired platforms for which The Project are to be integrated with are LinkedIn, Facebook, and Twitter.
     - I will not be creating any new accounts.
     - began UI layout planning. Mind mapping, flowcharting, etc. in Figma, Excalidraw and similar softwares.    
+    - Except not really lol. 
+    - Pseudocoding out basic functionality of each module and main.py. 
