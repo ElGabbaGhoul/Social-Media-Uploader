@@ -14,3 +14,6 @@ Project NatureBot Created
     - Except not really lol. 
     - Pseudocoding out basic functionality of each module and main.py. 
     - Testing ideas with basic code from CGPT
+
+03/2/23
+    - began implementing facebook api communication to allow content to post.
