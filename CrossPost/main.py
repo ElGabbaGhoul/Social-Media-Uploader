@@ -1,8 +1,8 @@
-import os
+from facebook import Facebook
+from twitter import Twitter
+from credentials import Credentials
 import tkinter as tk
 import tkinter.filedialog as fd
-import win32gui
-import win32con
 
 def create_post():
     root = tk.Tk()
@@ -26,7 +26,7 @@ def create_post():
             hashtags += "#" + tag.strip().lower() + " "
 
     # prompt user to select a picture
-    pic_folder_path = "pics"
+    pic_folder_path = "./CrossPost/pics"
     pic_filetypes = [("JPEG files", "*.jpg"), ("PNG files", "*.png")]
     pic_filename = fd.askopenfilename(initialdir=pic_folder_path, title="Select Picture", filetypes=pic_filetypes)
 
@@ -39,10 +39,23 @@ def create_post():
         "text": text_submission + " " + hashtags,
         "picture_path": pic_filename
     }
-    print("Data:", data)
+    print("\nSUCCESS!! DATA TO BE SENT TO SOCIAL MEDIA PLATFORMS HERE! \n", "Data:", data)
 
-    # bring picture window to the foreground
-    pic_window = win32gui.FindWindow(None, "Select Picture")
-    win32gui.SetForegroundWindow(pic_window)
+# prompt user for post data
+data = create_post()
 
-create_post()
+# log in to Facebook
+fb = Facebook
+username, password = fb.prompt_login()
+fb.login(username, password)
+
+# post to Facebook
+fb.post_to_facebook(data)
+
+# log out
+fb.logout()
+
+#log in to twitter
+tw = Twitter
+username, password = tw.prompt_login()
+tw.login(username, password)

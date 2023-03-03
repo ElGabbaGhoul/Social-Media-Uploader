@@ -17,3 +17,9 @@ Project NatureBot Created
 
 03/2/23
     - began implementing facebook api communication to allow content to post.
+    - decided CrossPost is a better name for this app, as it doesn't limit user to one kind of image. 
+    - did a lot of work on things besides facebook on facebook branch
+    - added facebook (and twitter) post submission functionality
+    - added credentials.py which saves hashed passwords. allegedly. 
+
+    - FOR TOMORROW: I am going to have credentials be the module that asks what platform the user wants to post to. then the request for credentials will come from the respective module. Currently, credentials asks, as does the Social Media Platform Module (SMPP). Keep up the good work scooter C:
