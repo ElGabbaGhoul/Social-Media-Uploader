@@ -43,3 +43,4 @@ Project NatureBot Created
     - facebook branch contains way more than facebook stuff. That's ok. It's all on main, and when we work on the branches in the future, we'll just edit the crap out. 
     - established workflow conducive to getting good stuff done. 
     - continued implementing Facebook branch functionality.
+    - began to chart out flow on miro.

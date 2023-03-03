@@ -1,6 +1,7 @@
 import os
 import time
 from selenium import webdriver
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -9,7 +10,7 @@ from selenium.webdriver.common.by import By
 
 class Facebook:
     def __init__(self):
-        self.driver = None
+        self.driver = webdriver.Firefox()
 
     def prompt_login(self):
         username = input("Please enter your Facebook username: ")
@@ -17,26 +18,28 @@ class Facebook:
         return username, password
 
     def login(self, username, password):
-        self.driver = webdriver.Chrome()
         self.driver.get("https://www.facebook.com/")
-
         # enter login credentials
         email_field = self.driver.find_element_by_id("email")
         email_field.send_keys(username)
         password_field = self.driver.find_element_by_id("pass")
         password_field.send_keys(password)
-        password_field.send_keys(Keys.ENTER)
 
         # wait for login to complete
         try:
-            element_present = EC.presence_of_element_located((By.ID, "userNavigationLabel"))
-            WebDriverWait(self.driver, 10).until(element_present)
-        except:
-            print("Login failed.")
-            self.driver.quit()
-            return False
-
-        return True
+            WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.ID, "userNavigationLabel"))
+            )
+            print("Login successful!")
+            return True
+        except TimeoutException:
+            print("Login failed: invalid credentials")
+            choice = input("Would you like to try again? (y/n): ")
+            if choice.lower() == "y":
+                return self.prompt_login()
+            else:
+                self.driver.quit()
+                return False
 
     def post_to_facebook(self, data):
         if not self.driver:
