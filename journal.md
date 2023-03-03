@@ -23,3 +23,8 @@ Project NatureBot Created
     - added credentials.py which saves hashed passwords. allegedly. 
 
     - FOR TOMORROW: I am going to have credentials be the module that asks what platform the user wants to post to. then the request for credentials will come from the respective module. Currently, credentials asks, as does the Social Media Platform Module (SMPP). Keep up the good work scooter C:
+
+03/03/23
+    - cleaned out facebook branch to only be facebook stuff. 
+    - created twitter, linkedin, and credentials branches.
+    - workflow: update journal on main, choose branch, finish branch, start on new branch. when all branches are finished and main is up to date, flesh out readme. give good instructions on how to use this program. give out the repo. Make a youtube video. have people test it and try to break it. add other platforms. the possibilities are endless. Keep going.

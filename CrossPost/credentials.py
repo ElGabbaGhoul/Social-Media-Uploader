@@ -1,3 +1,5 @@
+# stores credentials saved by respective social media 
+
 import keyring
 
 class Credentials:
