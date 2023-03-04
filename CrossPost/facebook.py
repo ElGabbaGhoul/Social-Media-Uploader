@@ -10,7 +10,7 @@ from selenium.webdriver.common.by import By
 
 class Facebook:
     def __init__(self):
-        self.driver = webdriver.Firefox()
+        self.driver = webdriver.Chrome()
 
     def prompt_login(self):
         username = input("Please enter your Facebook username: ")

@@ -56,6 +56,6 @@ fb.post_to_facebook(data)
 fb.logout()
 
 #log in to twitter
-tw = Twitter
-username, password = tw.prompt_login()
-tw.login(username, password)
+# tw = Twitter
+# username, password = tw.prompt_login()
+# tw.login(username, password)

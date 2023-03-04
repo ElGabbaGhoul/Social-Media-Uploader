@@ -44,3 +44,4 @@ Project NatureBot Created
     - established workflow conducive to getting good stuff done. 
     - continued implementing Facebook branch functionality.
     - began to chart out flow on miro.
+    - plotted out flow on miro
