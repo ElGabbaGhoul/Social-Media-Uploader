@@ -45,3 +45,5 @@ Project NatureBot Created
     - continued implementing Facebook branch functionality.
     - began to chart out flow on miro.
     - plotted out flow on miro
+
+    - still need to add main.py: initialize replies as empty list, add query function, then add logic re replies. 
