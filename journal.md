@@ -47,3 +47,23 @@ Project NatureBot Created
     - plotted out flow on miro
 
     - still need to add main.py: initialize replies as empty list, add query function, then add logic re replies. 
+    - pl
+    - Plans for 03/06/23
+        - compare extensions between vscode on laptop and vscode on pc. look for function paragraph identifier. whatever it's called.
+        - gui sounds easy. maybe plan it out on miro since it looks like the planning will take longer than implementing. can plan it out before coding more for the backend. backend is basically planned out, just need to fine tune the ordering of functions in main.py and add login functionality for twitter and linkedin. 
+        - During testing and development, I will be interacting with CrossPost via input() and responding in the terminal.
+            - steps for data flow is as follows:
+                - user opens program for the first time after installing 
+                - hello - welcome to crosspost. would you like to post to facebook? Linkedin? Twitter? 
+                - user answers yes or no
+                - program remembers answers
+                - for each approved platform, user enters relevant login info
+                - login information is saved, hashed, secured, etc etc. 
+                - program requests user to prepare a post, post must be at least 1 picture, text body 5 character minimum, hashtags optional
+                - user provides proper data, can post!
+                - program sends posts to approved sites. show progress and status (=====-----) 50% ~
+                - see your post? program gets url for post. presents it to user.
+        - when this application has a gui, I will be allowing them to save their login information locally. it will be hashed and secure. 
+        - this is a good idea but will require much brainpower. don't smoke in the morning. you can smoke after work. 6pm. 
+        - also need to work on portfolio, jampackd, and krys' portfolio. schedule a meeting with them on Monday, 3/6. 
+        - send at least 20 job apps out this week. 
