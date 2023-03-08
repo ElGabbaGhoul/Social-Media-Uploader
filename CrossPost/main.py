@@ -1,6 +1,5 @@
 from facebook import Facebook
 from twitter import Twitter
-from credentials import Credentials
 import tkinter as tk
 import tkinter.filedialog as fd
 
