@@ -1,19 +1,18 @@
-from facebook import Facebook
-from twitter import Twitter
-import tkinter as tk
-import tkinter.filedialog as fd
+from fb import FacebookAPI
+# import tkinter as tk
+# import tkinter.filedialog as fd
 
 # function to query which platforms app can post to.
 platforms = ["Facebook", "LinkedIn", "Twitter"]
 def query_platforms(platforms):
-    # initialize responses list
-    responses = []
+  # initialize responses list
+  responses = []
 
-    for p in platforms:
-        response = input(f"Would you like CrossPost to post to {p}? (yes/no): ")
-        if response.lower() == 'yes':
-            responses.append(p[:2].lower())
-    return responses
+  for p in platforms:
+    response = input(f"Would you like CrossPost to post to {p}? (yes/no): ")
+    if response.lower() == 'yes':
+      responses.append(p[:2].lower())
+  return responses
 
 responses = query_platforms(platforms)
 print(responses)
